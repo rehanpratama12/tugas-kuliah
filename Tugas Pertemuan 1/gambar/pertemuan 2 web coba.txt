@@ -1,0 +1,3 @@
+link repository:https://github.com/rehanpratama12/tugas-kuliah
+
+link tugas : https://github.com/rehanpratama12/tugas-kuliah/tree/57eff0bdb4111358bbb69c0564efd98fc6695ea3/Tugas%20Pertemuan%202
