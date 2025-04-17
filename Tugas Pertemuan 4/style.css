@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  /* Menetapkan background navigasi dengan warna tetap dan mengatur menu vertikal */
+  nav {
+    background-color: #333;  /* Background navigasi tetap sama */
+    margin: 20px 0;
+  }
+  
+  nav ul {
+    /* Menggunakan flexbox dengan arah kolom untuk menampilkan item secara vertikal */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Agar teks rata kiri */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    width: 200px; /* Lebar container menu (sesuaikan jika perlu) */
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;  /* Jarak antar item */
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #4CAF50;
+  }
+  
+  /* Gaya untuk main, konten, sidebar, dan footer (tetap sama seperti sebelumnya) */
+  main {
+    display: flex;
+    margin: 20px;
+  }
+  
+  .content {
+    flex: 2;
+  }
+  
+  .content article {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background: #eaeaea;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #4CAF50;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+  }
