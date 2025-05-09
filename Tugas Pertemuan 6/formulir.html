@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .formulir {
+        background-color: lightblue;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
+
+      .kelompok-input {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="date"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      .kelompok-radio {
+        display: flex;
+        gap: 20px;
+        margin-top: 8px;
+      }
+
+      .opsi-radio {
+        display: flex;
+        align-items: center;
+      }
+
+      .opsi-radio input {
+        margin-right: 8px;
+      }
+
+      .kelompok-tombol {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .tombol-kembali {
+        background-color: #f0f0f0;
+        color: #333;
+      }
+
+      .tombol-kirim {
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="formulir">
+      <h1>Silahkan Isikan Data</h1>
+
+      <form>
+        <div class="kelompok-input">
+          <label for="namaDepan">First name</label>
+          <input type="text" id="namaDepan" name="namaDepan" />
+        </div>
+
+        <div class="kelompok-input">
+          <label for="namaTengah">Middle name</label>
+          <input type="text" id="namaTengah" name="namaTengah" />
+        </div>
+
+        <div class="kelompok-input">
+          <label for="namaBelakang">Last Name</label>
+          <input type="text" id="namaBelakang" name="namaBelakang" />
+        </div>
+
+        <div class="kelompok-input">
+          <label for="tanggalLahir">Tanggal Lahir</label>
+          <input type="date" id="tanggalLahir" name="tanggalLahir" />
+        </div>
+
+        <div class="kelompok-input">
+          <label>Jenis Kelamin</label>
+          <div class="kelompok-radio">
+            <div class="opsi-radio">
+              <input type="radio" id="pria" name="jenisKelamin" value="pria" checked />
+              <label for="pria">Pria</label>
+            </div>
+            <div class="opsi-radio">
+              <input type="radio" id="wanita" name="jenisKelamin" value="wanita" />
+              <label for="wanita">Wanita</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="kelompok-input">
+          <label for="tempatTinggal">Tempat Tinggal</label>
+          <input type="text" id="tempatTinggal" name="tempatTinggal" />
+        </div>
+
+        <div class="kelompok-input">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="kelompok-input">
+          <label for="telepon">Phone</label>
+          <input type="tel" id="telepon" name="telepon" />
+        </div>
+
+        <div class="kelompok-input">
+          <label for="sandi">Password</label>
+          <input type="password" id="sandi" name="sandi" />
+        </div>
+
+        <div class="kelompok-tombol">
+          <button type="button" class="tombol-kembali">Kembali</button>
+          <button type="submit" class="tombol-kirim">Back</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
